@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Test coverage reports
+coverage/
+*.lcov
+
+# Allure results and reports
+allure-results/
+allure-report/
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
