@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repositorio
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Use Node.js 20.x
@@ -23,10 +23,12 @@ jobs:
         with:
           node-version: '20.x'
     
-      - name: Instal dependencies
-        run: npm install
+      - name: Install dependencies
+        run: |
+          npm cache clean --force
+          npm install
 
-      - name: Rodar testes
+      - name: Run tests
         run: npm test
 
       - name: Install Allure
