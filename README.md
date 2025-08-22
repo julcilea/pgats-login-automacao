@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Login API
 
 Este projeto é uma API simples de login construída com Node.js e Express, com separação entre Controller, Service e Model. A API permite autenticar usuários com base em um conjunto de credenciais armazenadas em memória. O projeto também inclui testes automatizados usando Mocha, Sinon, SuperTest e Chai, e está configurado para rodar em uma pipeline de integração contínua no GitHub Actions.
@@ -92,7 +91,3 @@ Chai-http
 Sinon
 SuperTest
 Instalação
-
-=======
-# pgats-login-automacao
->>>>>>> main
