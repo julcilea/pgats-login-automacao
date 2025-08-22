@@ -37,7 +37,7 @@ jobs:
         with:
           name: Mocha Tests
           path: ./test-results.xml
-          reporter: mocha-junit-reporter
+          reporter: mocha-junit
 
       - name: Install Allure
         run: npm install -g allure-commandline --save-dev

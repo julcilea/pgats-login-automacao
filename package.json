@@ -5,8 +5,8 @@
   "scripts": {
     "test": "mocha --reporter mocha-junit-reporter"
   }, 
-  "mochaJunitReporterReporterOptions": {
-    "mochaFile": "./test-results.xml"
+  "mochaJunitReporterOptions": {
+  "mochaFile": "./test-results.xml"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
