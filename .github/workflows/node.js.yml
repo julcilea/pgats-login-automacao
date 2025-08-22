@@ -33,11 +33,12 @@ jobs:
       
       - name: Test Reporter
         uses: dorny/test-reporter@v1
-        if: always()
+        if: ${{ !cancelled() }}
         with:
-          name: Mocha Tests
+          name: Test Report
           path: ./test-results.xml
-          reporter: mocha-junit
+          reporter: java-junit
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install Allure
         run: npm install -g allure-commandline --save-dev
