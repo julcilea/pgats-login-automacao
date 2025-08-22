@@ -30,6 +30,14 @@ jobs:
 
       - name: Run tests
         run: npm test
+      
+      - name: Test Reporter
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: Mocha Tests
+          path: ./test-results.xml
+          reporter: mocha-junit
 
       - name: Install Allure
         run: npm install -g allure-commandline --save-dev

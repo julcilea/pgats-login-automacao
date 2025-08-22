@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.036" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-08-22T01:38:28" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Auth Controller" timestamp="2025-08-22T01:38:28" tests="5" file="/home/julcilea/Documentos/PGATS/gats-login/test/authController.test.js" time="0.035" failures="0">
+    <testcase name="Auth Controller should return 200 and user data for valid credentials" time="0.022" classname="should return 200 and user data for valid credentials">
+    </testcase>
+    <testcase name="Auth Controller should return 401 for invalid credentials" time="0.002" classname="should return 401 for invalid credentials">
+    </testcase>
+    <testcase name="Auth Controller should call authenticate with correct parameters" time="0.002" classname="should call authenticate with correct parameters">
+    </testcase>
+    <testcase name="Auth Controller should handle missing username or password" time="0.003" classname="should handle missing username or password">
+    </testcase>
+    <testcase name="Auth Controller should handle empty request body" time="0.002" classname="should handle empty request body">
+    </testcase>
+  </testsuite>
+</testsuites>
