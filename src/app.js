@@ -16,7 +16,7 @@ const swaggerOptions = {
       description: 'Documentação da API de Login',
     },
   },
-  apis: ['./src/controllers/*.js'], // Ajuste o caminho conforme necessário
+  apis: ['./src/controllers/*.js'],
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
@@ -24,10 +24,5 @@ const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.post('/login', authController.login);
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
-});
 
 module.exports = app;
