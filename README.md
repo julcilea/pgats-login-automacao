@@ -79,8 +79,34 @@ POST /login
   "username": "user1",
   "password": "pass1"
 }
+```
 
-### Dependências
+## Documentação Swagger
+
+Este projeto utiliza o Swagger para documentação automática da API.
+
+Após instalar as dependências e iniciar o servidor, acesse:
+
+```
+http://localhost:3000/api-docs
+```
+
+para visualizar e testar os endpoints via Swagger UI.
+
+### Como funciona
+
+- O Swagger está configurado em `src/app.js` usando os pacotes `swagger-ui-express` e `swagger-jsdoc`.
+- Os endpoints são documentados diretamente nos controllers, por exemplo em `src/controllers/authController.js`.
+
+### Instalação das dependências do Swagger
+
+Execute o comando abaixo para instalar as dependências necessárias:
+
+```bash
+npm install swagger-ui-express swagger-jsdoc --save
+```
+
+## Dependências
 Certifique-se de que as seguintes dependências estão instaladas:
 
 Express
@@ -90,4 +116,3 @@ Chai
 Chai-http
 Sinon
 SuperTest
-Instalação
